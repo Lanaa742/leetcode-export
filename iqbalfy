@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iqbalfy.com - Jasa professional editing logo dan gambar dengan harga terjangkau">
+    <meta name="keywords" content="jasa edit logo, edit gambar, desain grafis, iqbalfy">
+    <title>iqbalfy.com - Jasa Profesional Edit Logo & Gambar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4e73df;
+            --secondary-color: #f8f9fc;
+            --accent-color: #2e59d9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5rem 0;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .payment-methods img {
+            height: 40px;
+            margin: 0 10px;
+        }
+        
+        footer {
+            background-color: #2e3a4e;
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            text-decoration: none;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/588a8b16-47fc-4a15-9fa8-23e28e3b44cc.png" alt="IQBALFY STUDIO - profesional jasa desain grafis">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Jasa Profesional Edit Logo & Gambar</h1>
+            <p class="lead mb-5">Hasilkan desain berkualitas tinggi untuk bisnis Anda dengan tim profesional kami</p>
+            <a href="#services" class="btn btn-light btn-lg px-4">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Layanan Kami</h2>
+                <p class="text-muted">Pilih layanan yang sesuai dengan kebutuhan Anda</p>
+            </div>
+            
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-6">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="card-title">Jasa Edit Logo</h3>
+                            <p class="card-text">
+                                Kami menawarkan jasa desain dan editing logo profesional dengan harga terjangkau. 
+                                Cocok untuk bisnis baru yang membutuhkan identitas visual yang kuat.
+                            </p>
+                            <div class="my-4">
+                                <h4 class="text-primary">Rp 150.000</h4>
+                                <small class="text-muted">per desain</small>
+                            </div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal" 
+                                    onclick="setService('Jasa Edit Logo')">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="col-md-6">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h3 class="card-title">Jasa Edit Gambar</h3>
+                            <p class="card-text">
+                                Layanan editing foto profesional untuk keperluan bisnis, media sosial, atau pribadi. 
+                                Termasuk background removal, color correction, dan efek khusus.
+                            </p>
+                            <div class="my-4">
+                                <h4 class="text-primary">Rp 100.000</h4>
+                                <small class="text-muted">per gambar</small>
+                            </div>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal"
+                                    onclick="setService('Jasa Edit Gambar')">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Cara Order</h2>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <h3 class="m-0">1</h3>
+                        </div>
+                        <h5>Pilih Layanan</h5>
+                        <p>Pilih jasa yang Anda butuhkan (edit logo atau gambar)</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <h3 class="m-0">2</h3>
+                        </div>
+                        <h5>Isi Form</h5>
+                        <p>Isi formulir order dengan detail kebutuhan Anda</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <h3 class="m-0">3</h3>
+                        </div>
+                        <h5>Pembayaran</h5>
+                        <p>Transfer via DANA/OVO/GoPay/Bank sesuai instruksi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-3">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                            <h3 class="m-0">4</h3>
+                        </div>
+                        <h5>Proses & Kirim</h5>
+                        <p>Kami proses pesanan dan kirim hasil via email/WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Metode Pembayaran</h2>
+                <p class="text-muted">Transfer melalui platform pembayaran berikut:</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="payment-methods text-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc872445-4b34-4053-a563-c2c3b478d30e.png" alt="Logo pembayaran DANA - warna orange">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a902c4b5-b0a5-4ab2-92cf-6f8306a9b960.png" alt="Logo pembayaran OVO - warna ungu">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/67942620-6708-4b14-933b-877a7f9fa9ec.png" alt="Logo pembayaran GoPay - warna biru">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bc15b2fe-01db-42f2-b422-ea2af1ecca19.png" alt="Logo pembayaran bank transfer">
+                    </div>
+                    
+                    <div class="form-container mt-5">
+                        <h4 class="mb-4">Informasi Rekening Pembayaran:</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Metode Pembayaran</th>
+                                        <th>Nomor/Detail</th>
+                                        <th>Atas Nama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DANA</td>
+                                        <td>087782078630</td>
+                                        <td>IQBAL F</td>
+                                    </tr>
+                                    <tr>
+                                        <td>OVO</td>
+                                        <td>087782078630</td>
+                                        <td>IQBAL F</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GoPay</td>
+                                        <td>087782078630</td>
+                                        <td>IQBAL F</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bank BCA</td>
+                                        <td>1234567890</td>
+                                        <td>IQBAL F</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="alert alert-info mt-4">
+                            <strong>Catatan:</strong> Setelah transfer, harap kirim bukti pembayaran melalui WhatsApp dengan format:<br>
+                            <em>"Nama Anda | Nomor Order | Jenis Layanan | Jumlah Transfer | Nama Bank/E-Wallet"</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Kontak Kami</h2>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-phone-alt me-2"></i> Telepon/WhatsApp</h5>
+                        <p>+62 877-8207-8630</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                        <p>info@iqbalfy.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-clock me-2"></i> Jam Operasional</h5>
+                        <p>Senin - Jumat: 09:00 - 17:00 WIB</p>
+                        <p>Sabtu: 09:00 - 14:00 WIB</p>
+                    </div>
+                    <a href="https://wa.me/6287782078630" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp me-2"></i> Chat via WhatsApp
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <h4 class="mb-4">Kirim Pesan</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalTitle">Formulir Pemesanan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="orderForm">
+                        <input type="hidden" id="serviceType">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="orderName" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="orderName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="orderEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="orderEmail" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="orderPhone" class="form-label">Nomor WhatsApp</label>
+                                <input type="tel" class="form-control" id="orderPhone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="orderDeadline" class="form-label">Batas Waktu Pengerjaan</label>
+                                <select class="form-select" id="orderDeadline">
+                                    <option value="3 hari">3 hari (Standar)</option>
+                                    <option value="2 hari">2 hari (+Rp 50.000)</option>
+                                    <option value="1 hari">1 hari (+Rp 100.000)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderDetails" class="form-label">Detail Kebutuhan</label>
+                            <textarea class="form-control" id="orderDetails" rows="4" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderFile" class="form-label">Unggah File (Logo/Gambar)</label>
+                            <input type="file" class="form-control" id="orderFile">
+                        </div>
+                        <div class="alert alert-primary">
+                            <h6>Instruksi Pembayaran:</h6>
+                            <ol>
+                                <li>Isi lengkap formulir ini</li>
+                                <li>Kami akan mengirimkan invoice via WhatsApp</li>
+                                <li>Transfer via DANA/OVO/GoPay/Bank dengan nomor yang tertera</li>
+                                <li>Kirim bukti transfer ke WhatsApp <strong>+62 877-8207-8630</strong></li>
+                                <li>Tim kami akan segera memproses pesanan Anda</li>
+                            </ol>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary" onclick="submitOrder()">Kirim Pesanan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Portfolio Kami</h2>
+                <p class="text-muted">Beberapa contoh hasil pekerjaan kami</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0c13e44d-6c24-4300-9208-e47967a31fcc.png" alt="Contoh logo sebelum diedit, warna gelap dan kurang modern" class="card-img-top">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f092e399-502b-454c-bf45-4a5d9dd5fa4b.png" alt="Hasil edit logo modern dengan warna cerah dan desain minimalis" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Redesign Logo</h5>
+                            <p class="card-text">Transformasi logo bisnis kafe menjadi lebih modern dan eye-catching</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b8fe513c-44a8-4a45-986f-61f5fc019b17.png" alt="Foto produk sebelum diedit dengan background ruangan" class="card-img-top">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d76d2079-c265-4a40-8ccc-91ea96951f28.png" alt="Hasil edit foto produk dengan background putih bersih" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Photo Editing</h5>
+                            <p class="card-text">Background removal dan color correction untuk produk kosmetik</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f57fb34-2b96-48af-bd0e-41c81a0a9911.png" alt="Logo awal sederhana dengan konsep dasar" class="card-img-top">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/40205a10-75d9-448d-af21-bc08c35e407a.png" alt="Hasil akhir logo premium dengan detil dan gradasi warna profesional" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Logo Design</h5>
+                            <p class="card-text">Desain logo premium untuk perusahaan teknologi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/673b82c0-8a1c-4d82-ab0e-40574a1f3d3a.png" alt="IQBALFY STUDIO - profesional jasa desain grafis" class="mb-3">
+                    <p>Menyediakan jasa profesional untuk editing logo dan gambar dengan kualitas terbaik dan harga terjangkau.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Layanan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Jasa Edit Logo</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Jasa Edit Gambar</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Konsultasi Desain</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Kontak</h5>
+                    <p><i class="fas fa-phone-alt me-2"></i> +62 877-8207-8630</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@iqbalfy.com</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 iqbalfy.com - IQBALFY STUDIO. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Syarat & Ketentuan</a>
+                    <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function setService(service) {
+            document.getElementById('serviceType').value = service;
+            document.getElementById('orderModalTitle').innerText = 'Pesan: ' + service;
+        }
+        
+        function submitOrder() {
+            const name = document.getElementById('orderName').value;
+            const service = document.getElementById('serviceType').value;
+            
+            if(name && service) {
+                alert(`Terima kasih ${name}! Pesanan Anda untuk ${service} telah kami terima. Tim kami akan segera menghubungi Anda via WhatsApp untuk konfirmasi pembayaran.`);
+                const modal = bootstrap.Modal.getInstance(document.getElementById('orderModal'));
+                modal.hide();
+                document.getElementById('orderForm').reset();
+            } else {
+                alert('Harap lengkapi semua kolom yang diperlukan!');
+            }
+        }
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pesan Anda telah terkirim! Kami akan menghubungi Anda segera.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
